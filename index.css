@@ -186,4 +186,117 @@ main .card-section .section-header h2 {
     margin-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px; /* Giảm padding container */
+    }
+
+    header .container {
+        flex-direction: column; /* Stack logo và h1 */
+        text-align: center; /* Căn giữa nội dung header */
+    }
+
+    header .container .logo {
+        margin-bottom: 15px; /* Tăng khoảng cách dưới logo */
+    }
+
+    header .container h1 {
+        font-size: 28px; /* Giảm kích thước font cho tiêu đề chính */
+        width: auto; /* Đặt lại width */
+    }
+
+    main .search-container {
+        padding: 0 15px; /* Điều chỉnh padding cho search container */
+    }
+
+    .search-container i {
+        left: 35px; /* Điều chỉnh vị trí icon */
+    }
+
+    .search-container input {
+        padding: 15px 20px; /* Giảm padding input */
+        padding-left: 50px; /* Điều chỉnh padding-left cho icon */
+        font-size: 14px;
+    }
+
+    main .card-section .section-header {
+        flex-direction: column; /* Stack tiêu đề section */
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    main .card-section .section-header h2 {
+        font-size: 26px; /* Giảm kích thước font tiêu đề section */
+        margin-bottom: 15px;
+    }
+
+    .track-section {
+        gap: 15px; /* Giảm khoảng cách giữa các card */
+        padding: 0 5px; /* Giảm padding cho track section */
+    }
+
+    .track-section .track-card {
+        width: calc(100% - 30px); /* Mỗi card chiếm gần hết chiều rộng, trừ padding tổng 30px */
+        margin: 0 auto 15px auto; /* Căn giữa và khoảng cách dưới */
+    }
+
+    .track-section .track-card img {
+        height: 180px; /* Giảm chiều cao ảnh trên điện thoại */
+    }
+
+    .track-section .track-card h3 {
+        font-size: 17px;
+    }
+
+    .track-section .track-card p {
+        font-size: 13px;
+    }
+
+    .modal-content {
+        width: 95%; /* Mở rộng modal hơn trên điện thoại */
+        padding: 15px;
+    }
+
+    #modal-name {
+        font-size: 18px;
+    }
+
+    #iframe {
+        height: 250px; /* Giảm chiều cao iframe trên điện thoại */
+    }
+}
+
+/* Áp dụng cho màn hình rất nhỏ (ví dụ: iPhone SE, Galaxy Fold) */
+@media (max-width: 480px) {
+    header .container h1 {
+        font-size: 24px;
+    }
+
+    .search-container i {
+        left: 30px;
+    }
+
+    .search-container input {
+        padding-left: 45px;
+        font-size: 13px;
+    }
+
+    main .card-section .section-header h2 {
+        font-size: 24px;
+    }
+
+    .track-section .track-card img {
+        height: 150px; /* Chiều cao ảnh nhỏ hơn nữa */
+    }
+
+    #modal-name {
+        font-size: 16px;
+    }
+
+    #iframe {
+        height: 200px; /* Chiều cao iframe nhỏ hơn nữa */
+    }
+}
+
+
 
